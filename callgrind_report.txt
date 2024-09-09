@@ -1,0 +1,779 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.16899' (creator: callgrind-3.18.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 50419
+Trigger: Program termination
+Profiled target:  ./euler -v 5 -e 7 -s 1 (PID 16899, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+232,465 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir               file:function
+--------------------------------------------------------------------------------
+40,023 (17.22%)  ./elf/./elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+26,512 (11.40%)  ./elf/./elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+22,517 ( 9.69%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+18,848 ( 8.11%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+10,289 ( 4.43%)  ./elf/./elf/do-rel.h:_dl_relocate_object
+ 8,259 ( 3.55%)  ./stdio-common/./stdio-common/vfprintf-internal.c:__vfprintf_internal [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 7,630 ( 3.28%)  ./libio/./libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 6,830 ( 2.94%)  ./stdlib/./stdlib/random_r.c:srandom_r [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 6,610 ( 2.84%)  ./string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 5,740 ( 2.47%)  ./elf/./elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 5,088 ( 2.19%)  ./libio/./libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 4,192 ( 1.80%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:intel_check_word.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 4,086 ( 1.76%)  ./elf/../bits/stdlib-bsearch.h:intel_check_word.constprop.0
+ 3,450 ( 1.48%)  ./libio/./libio/genops.c:_IO_default_xsputn [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 3,428 ( 1.47%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 3,406 ( 1.47%)  ./elf/./elf/dl-tunables.h:__GI___tunables_init
+ 2,472 ( 1.06%)  ./elf/./elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 2,252 ( 0.97%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 1,747 ( 0.75%)  euler.c:countReachableVertices'2 [/home/shaharbabkoff/maarchot/matala4/euler]
+ 1,546 ( 0.67%)  ./elf/./elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 1,254 ( 0.54%)  ./string/../sysdeps/x86_64/multiarch/../strchr.S:__strchrnul_sse2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 1,195 ( 0.51%)  ./elf/./elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 1,014 ( 0.44%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   977 ( 0.42%)  ./libio/./libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   965 ( 0.42%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_sse2_unaligned [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   958 ( 0.41%)  ./elf/../sysdeps/generic/dl-protected.h:do_lookup_x
+   948 ( 0.41%)  ./elf/./elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   914 ( 0.39%)  graph.c:removeEdge [/home/shaharbabkoff/maarchot/matala4/euler]
+   883 ( 0.38%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+   865 ( 0.37%)  ./libio/./libio/libioP.h:_IO_default_xsputn
+   815 ( 0.35%)  ./elf/./elf/do-rel.h:_dl_start
+   810 ( 0.35%)  ./stdio-common/./stdio-common/printf.c:printf [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   790 ( 0.34%)  graph.c:addEdge [/home/shaharbabkoff/maarchot/matala4/euler]
+   776 ( 0.33%)  ./malloc/./malloc/malloc.c:ptmalloc_init.part.0
+   756 ( 0.33%)  ./elf/./elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   708 ( 0.30%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:handle_intel.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   702 ( 0.30%)  ./stdio-common/./stdio-common/_itoa.c:_itoa_word [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   694 ( 0.30%)  ./elf/./elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   677 ( 0.29%)  ./elf/./elf/dl-tunables.c:__tunable_get_val [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   666 ( 0.29%)  ./libio/./libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   660 ( 0.28%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   645 ( 0.28%)  ./elf/./elf/dl-minimal-malloc.c:__minimal_malloc [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   631 ( 0.27%)  ./elf/./elf/dl-load.c:open_verify.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   623 ( 0.27%)  ./elf/./elf/dl-load.c:open_path [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   585 ( 0.25%)  ./elf/./elf/dl-object.c:_dl_new_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   584 ( 0.25%)  ./elf/../elf/dl-sysdep.c:_dl_sysdep_start [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   576 ( 0.25%)  ./malloc/./malloc/malloc.c:calloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   576 ( 0.25%)  ./stdlib/./stdlib/random_r.c:random_r [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   554 ( 0.24%)  graph.c:edgeExists [/home/shaharbabkoff/maarchot/matala4/euler]
+   551 ( 0.24%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   542 ( 0.23%)  euler.c:countReachableVertices [/home/shaharbabkoff/maarchot/matala4/euler]
+   527 ( 0.23%)  ./elf/./elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   521 ( 0.22%)  ./stdlib/./stdlib/getenv.c:getenv [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   513 ( 0.22%)  ./stdio-common/../libio/libioP.h:__vfprintf_internal
+   505 ( 0.22%)  ./elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+   505 ( 0.22%)  ./elf/./elf/get-dynamic-info.h:_dl_map_object_from_fd
+   472 ( 0.20%)  ./posix/./posix/getopt.c:_getopt_internal_r [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   458 ( 0.20%)  ./elf/./elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   408 ( 0.18%)  ./string/../sysdeps/x86_64/multiarch/../strchr.S:index [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   407 ( 0.18%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   396 ( 0.17%)  ./string/../sysdeps/x86_64/multiarch/strlen-vec.S:strlen [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   392 ( 0.17%)  ./elf/./elf/dl-hwcaps_split.c:_dl_hwcaps_split_masked [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   387 ( 0.17%)  ./elf/./elf/dl-misc.c:_dl_name_match_p [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   378 ( 0.16%)  ./stdlib/./stdlib/random.c:random [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   360 ( 0.15%)  graph.c:createNode [/home/shaharbabkoff/maarchot/matala4/euler]
+   350 ( 0.15%)  ./elf/../elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   334 ( 0.14%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   330 ( 0.14%)  ./elf/./elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   328 ( 0.14%)  ./elf/./get-dynamic-info.h:dl_main
+   315 ( 0.14%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+   313 ( 0.13%)  euler.c:printEulerCircuit'2 [/home/shaharbabkoff/maarchot/matala4/euler]
+   312 ( 0.13%)  ./elf/./elf/dl-load.c:_dl_init_paths [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   303 ( 0.13%)  ./elf/./dl-map-segments.h:_dl_map_object_from_fd
+   303 ( 0.13%)  ./stdlib/../stdlib/strtol_l.c:____strtol_l_internal [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   303 ( 0.13%)  graph.c:printGraph [/home/shaharbabkoff/maarchot/matala4/euler]
+   302 ( 0.13%)  euler.c:generateRandomGraph [/home/shaharbabkoff/maarchot/matala4/euler]
+   290 ( 0.12%)  ./nptl/./nptl/libc-cleanup.c:__libc_cleanup_push_defer [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   288 ( 0.12%)  euler.c:isValidNextEdge [/home/shaharbabkoff/maarchot/matala4/euler]
+   284 ( 0.12%)  ./elf/./elf/dl-sort-maps.c:dfs_traversal.part.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   268 ( 0.12%)  ./elf/./elf/dl-lookup-direct.c:_dl_lookup_direct [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   257 ( 0.11%)  ./elf/./dl-find_object.h:_dl_find_object_from_map [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   255 ( 0.11%)  ./io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   254 ( 0.11%)  ./elf/./elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   252 ( 0.11%)  ./elf/./elf/dl-fini.c:_dl_fini [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   251 ( 0.11%)  ./elf/./elf/dl-load.c:open_verify.constprop.1 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   248 ( 0.11%)  ./elf/./elf/dl-minimal.c:strsep [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   245 ( 0.11%)  ./elf/./elf/dl-tunables.c:__GI___tunable_set_val [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   243 ( 0.10%)  ./elf/./get-dynamic-info.h:_dl_start
+   243 ( 0.10%)  ./stdio-common/./stdio-common/printf-parse.h:__vfprintf_internal
+   233 ( 0.10%)  ./string/../sysdeps/x86_64/strcspn.S:strcspn [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   232 ( 0.10%)  ./nptl/./nptl/libc-cleanup.c:__libc_cleanup_pop_restore [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   225 ( 0.10%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   215 ( 0.09%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:get_common_cache_info.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   207 ( 0.09%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:init_cpu_features.constprop.0
+   206 ( 0.09%)  ./elf/../sysdeps/x86/dl-prop.h:_dl_map_object_from_fd
+   193 ( 0.08%)  ./elf/../sysdeps/x86/dl-prop.h:dl_main
+   188 ( 0.08%)  ./elf/./elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   175 ( 0.08%)  ./libio/./libio/putchar.c:putchar [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   170 ( 0.07%)  ./elf/./elf/dl-find_object.c:_dlfo_process_initial [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   162 ( 0.07%)  ./io/../sysdeps/unix/sysv/linux/write.c:write [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   153 ( 0.07%)  ./malloc/./malloc/malloc.c:sysmalloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   152 ( 0.07%)  ./elf/./elf/dl-load.c:fillin_rpath.isra.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   150 ( 0.06%)  ./elf/../sysdeps/x86/cpu-features.c:init_cpu_features.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   144 ( 0.06%)  ./libio/./libio/libioP.h:_IO_do_write@@GLIBC_2.2.5
+   142 ( 0.06%)  ./elf/./elf/dl-init.c:call_init.part.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   140 ( 0.06%)  ./elf/./elf/dl-minimal.c:lookup_malloc_symbol [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   132 ( 0.06%)  euler.c:isConnected [/home/shaharbabkoff/maarchot/matala4/euler]
+   130 ( 0.06%)  ./libio/./libio/genops.c:_IO_cleanup [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   120 ( 0.05%)  ./io/../sysdeps/unix/sysv/linux/fstatat64.c:fstatat [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   118 ( 0.05%)  ???:0x000000000487b3e0 [???]
+   117 ( 0.05%)  ./malloc/./malloc/malloc.c:tcache_init.part.0 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   116 ( 0.05%)  ./elf/./elf/dl-setup_hash.c:_dl_setup_hash [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   115 ( 0.05%)  euler.c:main [/home/shaharbabkoff/maarchot/matala4/euler]
+   112 ( 0.05%)  ./elf/./elf/dl-object.c:_dl_add_to_namespace_list [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   112 ( 0.05%)  ./stdlib/./stdlib/cxa_finalize.c:__cxa_finalize [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   110 ( 0.05%)  ./elf/./elf/rtld.c:_dl_start [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   108 ( 0.05%)  ./misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   108 ( 0.05%)  ???:0x000000000487b4d0 [???]
+   107 ( 0.05%)  graph.c:freeGraph [/home/shaharbabkoff/maarchot/matala4/euler]
+   105 ( 0.05%)  ./elf/./elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   104 ( 0.04%)  ./libio/./libio/genops.c:_IO_flush_all_lockp [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   104 ( 0.04%)  ./posix/./posix/getopt.c:_getopt_internal [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   102 ( 0.04%)  ./elf/../elf/dl-tls.c:_dl_allocate_tls_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   101 ( 0.04%)  ./elf/./elf/dl-init.c:_dl_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   100 ( 0.04%)  graph.c:createGraph [/home/shaharbabkoff/maarchot/matala4/euler]
+    95 ( 0.04%)  euler.c:hasEulerCircuit [/home/shaharbabkoff/maarchot/matala4/euler]
+    94 ( 0.04%)  ./elf/../sysdeps/x86/cpu-features.c:update_active.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    94 ( 0.04%)  ./setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    90 ( 0.04%)  ./malloc/./malloc/arena.c:free
+    90 ( 0.04%)  ./stdlib/./stdlib/rand.c:rand [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    84 ( 0.04%)  ./libio/./libio/libioP.h:_IO_file_xsputn@@GLIBC_2.2.5
+    80 ( 0.03%)  ./elf/./elf/dl-find_object.c:_dlfo_sort_mappings [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    80 ( 0.03%)  ./elf/./elf/dl-minimal-malloc.c:__minimal_calloc [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    79 ( 0.03%)  ./stdlib/./stdlib/exit.c:__run_exit_handlers [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    76 ( 0.03%)  ./elf/../elf/dl-tls.c:_dl_determine_tlsoffset [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    74 ( 0.03%)  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    74 ( 0.03%)  ./elf/./elf/rtld.c:init_tls [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    72 ( 0.03%)  ./elf/./elf/dl-version.c:_dl_check_all_versions [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    72 ( 0.03%)  ./string/../sysdeps/x86_64/multiarch/../strchr.S:__strchr_sse2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    71 ( 0.03%)  ./csu/../csu/libc-start.c:__libc_start_main@@GLIBC_2.34 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    71 ( 0.03%)  ./elf/./elf/rtld.c:handle_preload_list [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    69 ( 0.03%)  ./malloc/./malloc/arena.c:ptmalloc_init.part.0 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    66 ( 0.03%)  ./libio/./libio/genops.c:__overflow [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    65 ( 0.03%)  ./elf/../sysdeps/generic/dl-hash.h:__rtld_malloc_init_real
+    63 ( 0.03%)  ./elf/./elf/dl-audit.c:_dl_audit_activity_nsid [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    60 ( 0.03%)  ./elf/./elf/dl-load.c:_dl_process_pt_gnu_property [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    60 ( 0.03%)  ./libio/./libio/libioP.h:putchar
+    60 ( 0.03%)  ???:0x0000000000109140 [???]
+    58 ( 0.02%)  ./elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_fxsave [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    57 ( 0.02%)  ./elf/./dl-load.h:_dl_map_object_from_fd
+    56 ( 0.02%)  ./libio/./libio/ioputs.c:puts [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    54 ( 0.02%)  ./io/../sysdeps/unix/sysv/linux/stat64.c:stat [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    54 ( 0.02%)  ???:0x0000000000109180 [???]
+    52 ( 0.02%)  ./string/../sysdeps/x86_64/multiarch/strlen-vec.S:__strlen_sse2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    51 ( 0.02%)  ./elf/../sysdeps/x86/cpu-features.c:get_common_indices.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    50 ( 0.02%)  ./libio/./libio/filedoalloc.c:_IO_file_doallocate [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    49 ( 0.02%)  ./misc/./misc/sbrk.c:sbrk [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    48 ( 0.02%)  ./string/./string/strdup.c:strdup [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    48 ( 0.02%)  euler.c:printEulerCircuit [/home/shaharbabkoff/maarchot/matala4/euler]
+    46 ( 0.02%)  ./elf/./elf/dl-load.c:expand_dynamic_string_token [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    44 ( 0.02%)  ./elf/./dl-hwcaps.h:_dl_important_hwcaps
+    44 ( 0.02%)  ./libio/./libio/genops.c:_IO_default_setbuf [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    44 ( 0.02%)  ???:0x00000000001091d0 [???]
+    43 ( 0.02%)  ./elf/./elf/dl-minimal.c:__rtld_malloc_init_real [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    43 ( 0.02%)  ./nptl/./nptl/pthread_mutex_lock.c:pthread_mutex_lock@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    43 ( 0.02%)  ???:0x000000000487b650 [???]
+    42 ( 0.02%)  ./elf/../sysdeps/nptl/dl-mutex.c:__rtld_mutex_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    42 ( 0.02%)  ./elf/./elf/dl-misc.c:_dl_sysdep_read_whole_file [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    42 ( 0.02%)  ./libio/./libio/libioP.h:__overflow
+    40 ( 0.02%)  ./malloc/./malloc/scratch_buffer_set_array_size.c:__libc_scratch_buffer_set_array_size [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    39 ( 0.02%)  ./stdlib/./stdlib/cxa_atexit.c:__cxa_atexit [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    38 ( 0.02%)  ./string/../sysdeps/x86_64/multiarch/ifunc-memmove.h:memmove
+    37 ( 0.02%)  ./elf/../elf/dl-tls.c:_dl_tls_static_surplus_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    37 ( 0.02%)  ./elf/./elf/dl-find_object.c:_dl_find_object_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    37 ( 0.02%)  ./nptl/../sysdeps/unix/sysv/linux/x86/elision-conf.c:__lll_elision_init [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    36 ( 0.02%)  ./elf/../sysdeps/nptl/dl-tls_init_tp.c:__tls_init_tp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    36 ( 0.02%)  ./elf/./elf/dl-deps.c:openaux [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: graph.c
+--------------------------------------------------------------------------------
+Ir           
+
+-- line 225 ----------------------------------------
+  .           #include "graph.h"
+  .           
+  .           /**
+  .            * Creates a new node in the adjacency list.
+  .            *
+  .            * @param vertex The vertex to be stored in the node.
+  .            * @return Pointer to the newly created node.
+  .            */
+100 ( 0.04%)  Node* createNode(int vertex) {
+ 60 ( 0.03%)      Node* newNode = (Node*)malloc(sizeof(Node));
+2,916 ( 1.25%)  => ???:0x00000000001091d0 (20x)
+ 40 ( 0.02%)      if (newNode == NULL) {
+  .                   fprintf(stderr, "Error: Memory allocation failed for new node.\n");
+  .                   exit(EXIT_FAILURE);
+  .               }
+ 60 ( 0.03%)      newNode->vertex = vertex;
+ 40 ( 0.02%)      newNode->next = NULL;
+ 20 ( 0.01%)      return newNode;
+ 40 ( 0.02%)  }
+  .           
+  .           /**
+  .            * Creates a graph with a specified number of vertices.
+  .            *
+  .            * @param numVertices The number of vertices in the graph.
+  .            * @return Pointer to the newly created graph.
+  .            */
+  5 ( 0.00%)  Graph* createGraph(int numVertices) {
+  3 ( 0.00%)      Graph* graph = (Graph*)malloc(sizeof(Graph));
+1,810 ( 0.78%)  => ???:0x00000000001091d0 (1x)
+  2 ( 0.00%)      if (graph == NULL) {
+  .                   fprintf(stderr, "Error: Memory allocation failed for graph.\n");
+  .                   exit(EXIT_FAILURE);
+  .               }
+  3 ( 0.00%)      graph->numVertices = numVertices;
+  8 ( 0.00%)      graph->degrees = (int*)calloc(numVertices, sizeof(int));
+218 ( 0.09%)  => ???:0x00000000001091a0 (1x)
+  4 ( 0.00%)      if (graph->degrees == NULL) {
+  .                   fprintf(stderr, "Error: Memory allocation failed for degrees array.\n");
+  .                   exit(EXIT_FAILURE);
+  .               }
+  8 ( 0.00%)      graph->array = (AdjList*)malloc(numVertices * sizeof(AdjList));
+189 ( 0.08%)  => ???:0x00000000001091d0 (1x)
+  4 ( 0.00%)      if (graph->array == NULL) {
+  .                   fprintf(stderr, "Error: Memory allocation failed for adjacency list array.\n");
+  .                   exit(EXIT_FAILURE);
+  .               }
+  .           
+ 25 ( 0.01%)      for (int i = 0; i < numVertices; i++) {
+ 35 ( 0.02%)          graph->array[i].head = NULL;
+  .               }
+  .           
+  1 ( 0.00%)      return graph;
+  2 ( 0.00%)  }
+  .           
+  .           /**
+  .            * Checks if an edge between two vertices exists in the graph.
+  .            *
+  .            * @param graph The graph in which to check for the edge.
+  .            * @param src The source vertex.
+  .            * @param dest The destination vertex.
+  .            * @return true if the edge exists, false otherwise.
+  .            */
+108 ( 0.05%)  bool edgeExists(Graph* graph, int src, int dest) {
+144 ( 0.06%)      Node* temp = graph->array[src].head;
+ 96 ( 0.04%)      while (temp != NULL) {
+ 88 ( 0.04%)          if (temp->vertex == dest) {
+  2 ( 0.00%)              return true; // Edge exists
+  .                   }
+ 63 ( 0.03%)          temp = temp->next;
+  .               }
+ 17 ( 0.01%)      return false; // Edge does not exist
+ 36 ( 0.02%)  }
+  .           
+  .           /**
+  .            * Adds an edge to the graph between two vertices.
+  .            * This is for an undirected graph, so it adds edges in both directions.
+  .            *
+  .            * @param graph The graph to which the edge will be added.
+  .            * @param src The source vertex of the edge.
+  .            * @param dest The destination vertex of the edge.
+  .            */
+ 70 ( 0.03%)  void addEdge(Graph* graph, int src, int dest) {
+  .               // Add edge from src to dest
+ 90 ( 0.04%)      if (!edgeExists(graph, src, dest)) {
+317 ( 0.14%)  => graph.c:edgeExists (10x)
+ 40 ( 0.02%)          Node* newNode = createNode(dest);
+1,638 ( 0.70%)  => graph.c:createNode (10x)
+ 90 ( 0.04%)          newNode->next = graph->array[src].head;
+ 80 ( 0.03%)          graph->array[src].head = newNode;
+  .           
+  .                   // Add edge from dest to src (since the graph is undirected)
+ 40 ( 0.02%)          newNode = createNode(src);
+1,638 ( 0.70%)  => graph.c:createNode (10x)
+ 90 ( 0.04%)          newNode->next = graph->array[dest].head;
+ 80 ( 0.03%)          graph->array[dest].head = newNode;
+  .           
+  .                   // Update the degrees of both vertices
+ 90 ( 0.04%)          graph->degrees[src]++;
+ 90 ( 0.04%)          graph->degrees[dest]++;
+  .               }
+ 30 ( 0.01%)  }
+  .           
+  .           /**
+  .            * Prints the adjacency list representation of the graph.
+  .            *
+  .            * @param graph The graph to be printed.
+  .            */
+  5 ( 0.00%)  void printGraph(Graph* graph) {
+ 31 ( 0.01%)      for (int v = 0; v < graph->numVertices; v++) {
+ 40 ( 0.02%)          Node* temp = graph->array[v].head;
+ 30 ( 0.01%)          printf("\n Adjacency list of vertex %d\n head ", v);
+14,995 ( 6.45%)  => ???:0x0000000000109180 (5x)
+ 43 ( 0.02%)          while (temp) {
+ 98 ( 0.04%)              printf("-> %d", temp->vertex);
+8,820 ( 3.79%)  => ???:0x0000000000109180 (14x)
+ 42 ( 0.02%)              temp = temp->next;
+  .                   }
+ 10 ( 0.00%)          printf("\n");
+1,080 ( 0.46%)  => ???:0x0000000000109150 (5x)
+  .               }
+  4 ( 0.00%)  }
+  .           
+  .           /**
+  .            * Removes an edge between two vertices.
+  .            *
+  .            * @param graph The graph where the edge will be removed.
+  .            * @param src The source vertex.
+  .            * @param dest The destination vertex.
+  .            */
+ 70 ( 0.03%)  void removeEdge(Graph* graph, int src, int dest) {
+  .               // Remove edge from src to dest
+ 10 ( 0.00%)      Node* prev = NULL;
+ 80 ( 0.03%)      Node* temp = graph->array[src].head;
+ 30 ( 0.01%)      while (temp != NULL) {
+ 40 ( 0.02%)          if (temp->vertex == dest) {
+ 20 ( 0.01%)              if (prev != NULL) {
+  .                           prev->next = temp->next;
+  .                       } else {
+ 90 ( 0.04%)                  graph->array[src].head = temp->next;
+  .                       }
+ 30 ( 0.01%)              free(temp);
+1,015 ( 0.44%)  => ???:0x0000000000109140 (10x)
+ 10 ( 0.00%)              break;
+  .                   }
+  .                   prev = temp;
+  .                   temp = temp->next;
+  .               }
+  .           
+  .               // Remove edge from dest to src (since graph is undirected)
+ 10 ( 0.00%)      prev = NULL;
+ 80 ( 0.03%)      temp = graph->array[dest].head;
+ 34 ( 0.01%)      while (temp != NULL) {
+ 48 ( 0.02%)          if (temp->vertex == src) {
+ 20 ( 0.01%)              if (prev != NULL) {
+ 10 ( 0.00%)                  prev->next = temp->next;
+  .                       } else {
+ 72 ( 0.03%)                  graph->array[dest].head = temp->next;
+  .                       }
+ 30 ( 0.01%)              free(temp);
+1,034 ( 0.44%)  => ???:0x0000000000109140 (10x)
+ 10 ( 0.00%)              break;
+  .                   }
+  4 ( 0.00%)          prev = temp;
+  6 ( 0.00%)          temp = temp->next;
+  .               }
+  .           
+  .               // Update the degrees of both vertices
+ 90 ( 0.04%)      graph->degrees[src]--;
+ 90 ( 0.04%)      graph->degrees[dest]--;
+ 30 ( 0.01%)  }
+  .           void createManualGraph(Graph* graph) {
+  .               int numEdges;
+  .               printf("Enter the number of edges: ");
+  .               scanf("%d", &numEdges);
+  .           
+  .               for (int i = 0; i < numEdges; i++) {
+  .                   int src, dest;
+  .                   printf("Enter edge %d (source destination): ", i + 1);
+-- line 390 ----------------------------------------
+-- line 396 ----------------------------------------
+  .                       i--; // Retry this edge
+  .                   } else {
+  .                       addEdge(graph, src, dest);
+  .                   }
+  .               }
+  .           
+  .               printf("Graph creation complete.\n");
+  .           }
+  5 ( 0.00%)  void freeGraph(Graph* graph) {
+  2 ( 0.00%)      if (graph == NULL) {
+  .                   return;
+  .               }
+  .           
+  .               // Free the adjacency list nodes
+ 31 ( 0.01%)      for (int i = 0; i < graph->numVertices; i++) {
+ 40 ( 0.02%)          Node* temp = graph->array[i].head;
+ 15 ( 0.01%)          while (temp) {
+  .                       Node* toDelete = temp;
+  .                       temp = temp->next;
+  .                       free(toDelete);
+  .                   }
+  .               }
+  .           
+  .               // Free the array and degrees array
+  4 ( 0.00%)      free(graph->array);
+ 91 ( 0.04%)  => ???:0x0000000000109140 (1x)
+  4 ( 0.00%)      free(graph->degrees);
+112 ( 0.05%)  => ???:0x0000000000109140 (1x)
+  .           
+  .               // Free the graph structure
+  4 ( 0.00%)      free(graph);
+112 ( 0.05%)  => ???:0x0000000000109140 (1x)
+  2 ( 0.00%)  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: euler.c
+--------------------------------------------------------------------------------
+Ir           
+
+-- line 166 ----------------------------------------
+  .           /**
+  .            * Helper function to count reachable vertices from a given vertex using DFS.
+  .            *
+  .            * @param graph The graph being traversed.
+  .            * @param v The starting vertex.
+  .            * @param visited Array of boolean flags indicating if a vertex has been visited.
+  .            * @return The number of reachable vertices.
+  .            */
+231 ( 0.10%)  int countReachableVertices(Graph* graph, int v, bool visited[]) {
+165 ( 0.07%)      visited[v] = true;
+ 33 ( 0.01%)      int count = 1; // Count the current vertex
+  .           
+264 ( 0.11%)      Node* adjList = graph->array[v].head;
+251 ( 0.11%)      while (adjList != NULL) {
+228 ( 0.10%)          int connectedVertex = adjList->vertex;
+608 ( 0.26%)          if (!visited[connectedVertex]) {
+182 ( 0.08%)              count += countReachableVertices(graph, connectedVertex, visited);
+1,747 ( 0.75%)  => euler.c:countReachableVertices'2 (7x)
+  .                   }
+228 ( 0.10%)          adjList = adjList->next;
+  .               }
+ 33 ( 0.01%)      return count;
+ 66 ( 0.03%)  }
+  .           
+  .           /**
+  .            * Checks if removing an edge will disconnect the graph.
+  .            * If it does, that edge is a bridge.
+  .            *
+  .            * @param graph The graph being checked.
+  .            * @param src The source vertex of the edge.
+  .            * @param dest The destination vertex of the edge.
+  .            * @return true if removing the edge does not disconnect the graph, false otherwise.
+  .            */
+ 49 ( 0.02%)  bool isValidNextEdge(Graph* graph, int src, int dest) {
+  .               // Check if it's the only edge left from src
+ 70 ( 0.03%)      if (graph->array[src].head->next == NULL) {
+  8 ( 0.00%)          return true;
+  .               }
+  .           
+  .               // Count vertices reachable from src before removing the edge
+ 21 ( 0.01%)      bool* visited = (bool*)calloc(graph->numVertices, sizeof(bool));
+576 ( 0.25%)  => ???:0x00000000001091a0 (3x)
+ 21 ( 0.01%)      int beforeRemovalCount = countReachableVertices(graph, src, visited);
+999 ( 0.43%)  => euler.c:countReachableVertices (3x)
+  9 ( 0.00%)      free(visited);
+294 ( 0.13%)  => ???:0x0000000000109140 (3x)
+  .           
+  .               // Temporarily remove the edge
+ 18 ( 0.01%)      removeEdge(graph, src, dest);
+884 ( 0.38%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:removeEdge (3x)
+  .           
+  .               // Count vertices reachable from src after removing the edge
+ 21 ( 0.01%)      visited = (bool*)calloc(graph->numVertices, sizeof(bool));
+504 ( 0.22%)  => ???:0x00000000001091a0 (3x)
+ 21 ( 0.01%)      int afterRemovalCount = countReachableVertices(graph, src, visited);
+903 ( 0.39%)  => euler.c:countReachableVertices (3x)
+  9 ( 0.00%)      free(visited);
+313 ( 0.13%)  => ???:0x0000000000109140 (3x)
+  .           
+  .               // Re-add the edge to restore the original graph
+ 18 ( 0.01%)      addEdge(graph, src, dest);
+729 ( 0.31%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:addEdge (3x)
+  .           
+  .               // If the number of reachable vertices is the same before and after removal,
+  .               // then removing this edge does not disconnect the graph
+  9 ( 0.00%)      return beforeRemovalCount == afterRemovalCount;
+ 14 ( 0.01%)  }
+  .           
+  .           /**
+  .            * Finds and prints the Euler circuit using Fleury's Algorithm.
+  .            *
+  .            * @param graph The graph containing the Euler circuit.
+  .            * @param start The starting vertex for the circuit.
+  .            */
+ 48 ( 0.02%)  void printEulerCircuit(Graph* graph, int start) {
+ 64 ( 0.03%)      Node* adjList = graph->array[start].head;
+  .               
+  .               // Traverse all edges starting from vertex `start`
+ 24 ( 0.01%)      while (adjList != NULL) {
+ 21 ( 0.01%)          int nextVertex = adjList->vertex;
+  .           
+  .                   // Check if this is a valid edge to remove (not a bridge unless necessary)
+ 56 ( 0.02%)          if (isValidNextEdge(graph, start, nextVertex)) {
+1,948 ( 0.84%)  => euler.c:isValidNextEdge (1x)
+ 42 ( 0.02%)              printf("%d -> ", start);
+627 ( 0.27%)  => ???:0x0000000000109180 (1x)
+ 42 ( 0.02%)              removeEdge(graph, start, nextVertex); // Remove the edge
+272 ( 0.12%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:removeEdge (1x)
+ 35 ( 0.02%)              printEulerCircuit(graph, nextVertex); // Recur with the next vertex
+10,232 ( 4.40%)  => euler.c:printEulerCircuit'2 (1x)
+  7 ( 0.00%)              return;
+  .                   }
+  .           
+  .                   adjList = adjList->next;
+  .               }
+  .           
+  .               // Print the last vertex (end of circuit)
+  6 ( 0.00%)      printf("%d\n", start);
+773 ( 0.33%)  => ???:0x0000000000109180 (1x)
+ 16 ( 0.01%)  }
+  .           
+  .           /**
+  .            * Generates a random graph with a specified number of edges.
+  .            * Ensures no duplicate edges and no self-loops.
+  .            *
+  .            * @param graph The graph to which edges will be added.
+  .            * @param numEdges The number of edges to add to the graph.
+  .            * @param seed The random seed used for generating the graph.
+  .            */
+  7 ( 0.00%)  void generateRandomGraph(Graph* graph, int numEdges, unsigned int seed) {
+  3 ( 0.00%)      srand(seed); // Seed the random number generator
+6,848 ( 2.95%)  => ???:0x0000000000109190 (1x)
+  1 ( 0.00%)      int edgeCount = 0;
+  .               
+  .               // Continue adding edges until the desired number is reached
+ 31 ( 0.01%)      while (edgeCount < numEdges) {
+ 54 ( 0.02%)          int src = rand() % graph->numVertices;
+540 ( 0.23%)  => ???:0x0000000000109230 (9x)
+ 54 ( 0.02%)          int dest = rand() % graph->numVertices;
+540 ( 0.23%)  => ???:0x0000000000109230 (9x)
+  .           
+  .                   // Ensure no self-loops and no duplicate edges
+ 99 ( 0.04%)          if (src != dest && !edgeExists(graph, src, dest)) {
+237 ( 0.10%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:edgeExists (8x)
+ 42 ( 0.02%)              addEdge(graph, src, dest);
+3,654 ( 1.57%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:addEdge (7x)
+  7 ( 0.00%)              edgeCount++; // Only increment if the edge is successfully added
+  .                   }
+  .               }
+  4 ( 0.00%)  }
+  .           
+  .           /**
+  .            * Checks if all vertices with non-zero degree are connected.
+  .            * 
+  .            * @param graph The graph being checked.
+  .            * @return true if the graph is connected, false otherwise.
+  .            */
+  5 ( 0.00%)  bool isConnected(Graph* graph) {
+  7 ( 0.00%)      bool* visited = (bool*)calloc(graph->numVertices, sizeof(bool));
+216 ( 0.09%)  => ???:0x00000000001091a0 (1x)
+  .           
+  1 ( 0.00%)      int startVertex = -1;
+  6 ( 0.00%)      for (int i = 0; i < graph->numVertices; i++) {
+  9 ( 0.00%)          if (graph->degrees[i] > 0) {
+  2 ( 0.00%)              startVertex = i;
+  1 ( 0.00%)              break;
+  .                   }
+  .               }
+  .           
+  2 ( 0.00%)      if (startVertex == -1) {
+  .                   return true; // No edges in the graph
+  .               }
+  .           
+  7 ( 0.00%)      int connectedVertices = countReachableVertices(graph, startVertex, visited);
+387 ( 0.17%)  => euler.c:countReachableVertices (1x)
+  3 ( 0.00%)      free(visited);
+ 91 ( 0.04%)  => ???:0x0000000000109140 (1x)
+  .           
+ 31 ( 0.01%)      for (int i = 0; i < graph->numVertices; i++) {
+ 55 ( 0.02%)          if (graph->degrees[i] > 0 && connectedVertices <= 1) {
+  .                       return false;
+  .                   }
+  .               }
+  1 ( 0.00%)      return true;
+  2 ( 0.00%)  }
+  .           
+  .           /**
+  .            * Determines if the graph has an Euler circuit.
+  .            * 
+  .            * An Euler circuit exists if the graph is connected and every vertex has an even degree.
+  .            * 
+  .            * @param graph The graph being checked.
+  .            * @return true if the graph has an Euler circuit, false otherwise.
+  .            */
+  5 ( 0.00%)  bool hasEulerCircuit(Graph* graph) {
+  6 ( 0.00%)      if (!isConnected(graph)) {
+826 ( 0.36%)  => euler.c:isConnected (1x)
+  .                   return false;
+  .               }
+  .           
+ 31 ( 0.01%)      for (int i = 0; i < graph->numVertices; i++) {
+ 50 ( 0.02%)          if (graph->degrees[i] % 2 != 0) {
+  .                       return false;
+  .                   }
+  .               }
+  .           
+  1 ( 0.00%)      return true;
+  2 ( 0.00%)  }
+  .           
+  .           /**
+  .            * Main function to parse command-line arguments, generate a random graph, 
+  .            * and determine if it has an Euler circuit.
+  .            */
+  6 ( 0.00%)  int main(int argc, char *argv[]) {
+  1 ( 0.00%)      int vertices = 0;
+  1 ( 0.00%)      int edges = 0;
+  3 ( 0.00%)      unsigned int seed = (unsigned int)time(NULL); // Default seed is current time
+  8 ( 0.00%)  => ???:0x00000000001091c0 (1x)
+  .           
+  .               // Parse command-line arguments
+  .               int opt;
+ 37 ( 0.02%)      while ((opt = getopt(argc, argv, "v:e:s:")) != -1) {
+1,238 ( 0.53%)  => ???:0x00000000001091e0 (4x)
+ 16 ( 0.01%)          switch (opt) {
+  .                       case 'v':
+  4 ( 0.00%)                  vertices = atoi(optarg);
+115 ( 0.05%)  => ???:0x00000000001091f0 (1x)
+  1 ( 0.00%)                  break;
+  .                       case 'e':
+  4 ( 0.00%)                  edges = atoi(optarg);
+115 ( 0.05%)  => ???:0x00000000001091f0 (1x)
+  1 ( 0.00%)                  break;
+  .                       case 's':
+  4 ( 0.00%)                  seed = (unsigned int)atoi(optarg);
+115 ( 0.05%)  => ???:0x00000000001091f0 (1x)
+  1 ( 0.00%)                  break;
+  .                       default:
+  .                           fprintf(stderr, "Usage: %s -v vertices -e edges [-s seed]\n", argv[0]);
+  .                           exit(EXIT_FAILURE);
+  .                   }
+  .               }
+  .           
+  .               // Check for valid input
+  4 ( 0.00%)      if (vertices <= 0 || edges <= 0) {
+  .                   fprintf(stderr, "Vertices and edges must be greater than 0\n");
+  .                   exit(EXIT_FAILURE);
+  .               }
+  .           
+  .               // Create the graph and generate a random graph with the specified parameters
+  4 ( 0.00%)      Graph* graph = createGraph(vertices);
+2,317 ( 1.00%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:createGraph (1x)
+  .               //createManualGraph( graph) ;
+  6 ( 0.00%)      generateRandomGraph(graph, edges, seed);
+12,121 ( 5.21%)  => euler.c:generateRandomGraph (1x)
+  3 ( 0.00%)      printGraph(graph);
+25,198 (10.84%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:printGraph (1x)
+  .           
+  .               // Check if the generated graph has an Euler circuit
+  5 ( 0.00%)      if (hasEulerCircuit(graph)) {
+921 ( 0.40%)  => euler.c:hasEulerCircuit (1x)
+  3 ( 0.00%)          printf("\nThe graph has an Euler circuit. The circuit is:\n");
+3,278 ( 1.41%)  => ???:0x0000000000109160 (1x)
+  5 ( 0.00%)          printEulerCircuit(graph, 0); // Start at any vertex with non-zero degree
+13,127 ( 5.65%)  => euler.c:printEulerCircuit (1x)
+  .               } else {
+  .                   printf("\nThe graph does not have an Euler circuit.\n");
+  .               }
+  3 ( 0.00%)      freeGraph(graph);
+422 ( 0.18%)  => /home/shaharbabkoff/maarchot/matala4/graph.c:freeGraph (1x)
+  .           
+  1 ( 0.00%)      return 0;
+  2 ( 0.00%)  }
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./csu/../csu/libc-start.c
+  ./elf/../bits/stdlib-bsearch.h
+  ./elf/../elf/dl-sysdep.c
+  ./elf/../elf/dl-tls.c
+  ./elf/../sysdeps/generic/dl-hash.h
+  ./elf/../sysdeps/generic/dl-protected.h
+  ./elf/../sysdeps/generic/ldsodefs.h
+  ./elf/../sysdeps/nptl/dl-mutex.c
+  ./elf/../sysdeps/nptl/dl-tls_init_tp.c
+  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  ./elf/../sysdeps/x86/cpu-features.c
+  ./elf/../sysdeps/x86/dl-cacheinfo.h
+  ./elf/../sysdeps/x86/dl-prop.h
+  ./elf/../sysdeps/x86_64/dl-machine.h
+  ./elf/../sysdeps/x86_64/dl-trampoline.h
+  ./elf/./dl-find_object.h
+  ./elf/./dl-hwcaps.h
+  ./elf/./dl-load.h
+  ./elf/./dl-map-segments.h
+  ./elf/./elf/dl-audit.c
+  ./elf/./elf/dl-cache.c
+  ./elf/./elf/dl-deps.c
+  ./elf/./elf/dl-environ.c
+  ./elf/./elf/dl-error-skeleton.c
+  ./elf/./elf/dl-find_object.c
+  ./elf/./elf/dl-fini.c
+  ./elf/./elf/dl-hwcaps.c
+  ./elf/./elf/dl-hwcaps_split.c
+  ./elf/./elf/dl-init.c
+  ./elf/./elf/dl-load.c
+  ./elf/./elf/dl-lookup-direct.c
+  ./elf/./elf/dl-lookup.c
+  ./elf/./elf/dl-minimal-malloc.c
+  ./elf/./elf/dl-minimal.c
+  ./elf/./elf/dl-misc.c
+  ./elf/./elf/dl-object.c
+  ./elf/./elf/dl-reloc.c
+  ./elf/./elf/dl-runtime.c
+  ./elf/./elf/dl-setup_hash.c
+  ./elf/./elf/dl-sort-maps.c
+  ./elf/./elf/dl-tunables.c
+  ./elf/./elf/dl-tunables.h
+  ./elf/./elf/dl-version.c
+  ./elf/./elf/do-rel.h
+  ./elf/./elf/get-dynamic-info.h
+  ./elf/./elf/rtld.c
+  ./elf/./get-dynamic-info.h
+  ./io/../sysdeps/unix/sysv/linux/fstatat64.c
+  ./io/../sysdeps/unix/sysv/linux/open64_nocancel.c
+  ./io/../sysdeps/unix/sysv/linux/stat64.c
+  ./io/../sysdeps/unix/sysv/linux/write.c
+  ./libio/./libio/filedoalloc.c
+  ./libio/./libio/fileops.c
+  ./libio/./libio/genops.c
+  ./libio/./libio/ioputs.c
+  ./libio/./libio/libioP.h
+  ./libio/./libio/putchar.c
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+  ./malloc/./malloc/scratch_buffer_set_array_size.c
+  ./misc/../sysdeps/unix/sysv/linux/mmap64.c
+  ./misc/./misc/sbrk.c
+  ./nptl/../sysdeps/unix/sysv/linux/x86/elision-conf.c
+  ./nptl/./nptl/libc-cleanup.c
+  ./nptl/./nptl/pthread_mutex_lock.c
+  ./posix/./posix/getopt.c
+  ./setjmp/../sysdeps/x86_64/setjmp.S
+  ./stdio-common/../libio/libioP.h
+  ./stdio-common/./stdio-common/_itoa.c
+  ./stdio-common/./stdio-common/printf-parse.h
+  ./stdio-common/./stdio-common/printf.c
+  ./stdio-common/./stdio-common/vfprintf-internal.c
+  ./stdlib/../stdlib/strtol_l.c
+  ./stdlib/./stdlib/cxa_atexit.c
+  ./stdlib/./stdlib/cxa_finalize.c
+  ./stdlib/./stdlib/exit.c
+  ./stdlib/./stdlib/getenv.c
+  ./stdlib/./stdlib/rand.c
+  ./stdlib/./stdlib/random.c
+  ./stdlib/./stdlib/random_r.c
+  ./string/../sysdeps/x86_64/multiarch/../strchr.S
+  ./string/../sysdeps/x86_64/multiarch/ifunc-memmove.h
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/strlen-vec.S
+  ./string/../sysdeps/x86_64/strcmp.S
+  ./string/../sysdeps/x86_64/strcspn.S
+  ./string/./string/strdup.c
+
+--------------------------------------------------------------------------------
+Ir             
+--------------------------------------------------------------------------------
+6,710 ( 2.89%)  events annotated
+
